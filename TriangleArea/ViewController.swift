@@ -9,24 +9,24 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var txtAlas: UITextField!
+    @IBOutlet weak var txtBase: UITextField!
     
-    @IBOutlet weak var txtTinggi: UITextField!
+    @IBOutlet weak var txtHeight: UITextField!
 
     @IBAction func btnCalculate(_ sender: UIButton) {
-        let a = txtAlas.text!
-        let tinggi = txtTinggi.text!
+        let base = txtBase.text!
+        let height = txtHeight.text!
         
-        let floatAlas = Float(a)!
-        let floatTinggi = Float(tinggi)!
+        let floatBase = Float(base)!
+        let floatHeight = Float(height)!
         
-        let result = 0.5 * floatAlas  * floatTinggi
+        let result = 0.5 * floatBase  * floatHeight
         
-        txtHasil.text = String(result)
+        txtResult.text = String(result)
     }
     
     
-    @IBOutlet weak var txtHasil: UILabel!
+    @IBOutlet weak var txtResult: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
