@@ -13,7 +13,18 @@
 		0D85279F294244F100D97847 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D85279D294244F100D97847 /* Main.storyboard */; };
 		0D8527A1294244F600D97847 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D8527A0294244F600D97847 /* Assets.xcassets */; };
 		0D8527A4294244F600D97847 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D8527A2294244F600D97847 /* LaunchScreen.storyboard */; };
+		0D8527B22942798E00D97847 /* TriangleAreaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8527B12942798E00D97847 /* TriangleAreaTests.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D8527B32942798E00D97847 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D85278C294244F100D97847 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D852793294244F100D97847;
+			remoteInfo = TriangleArea;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		0D852794294244F100D97847 /* TriangleArea.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TriangleArea.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -24,10 +35,19 @@
 		0D8527A0294244F600D97847 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0D8527A3294244F600D97847 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0D8527A5294244F600D97847 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D8527AF2942798E00D97847 /* TriangleAreaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TriangleAreaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D8527B12942798E00D97847 /* TriangleAreaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleAreaTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		0D852791294244F100D97847 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8527AC2942798E00D97847 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -41,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				0D852796294244F100D97847 /* TriangleArea */,
+				0D8527B02942798E00D97847 /* TriangleAreaTests */,
 				0D852795294244F100D97847 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -49,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				0D852794294244F100D97847 /* TriangleArea.app */,
+				0D8527AF2942798E00D97847 /* TriangleAreaTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,6 +87,14 @@
 				0D8527A5294244F600D97847 /* Info.plist */,
 			);
 			path = TriangleArea;
+			sourceTree = "<group>";
+		};
+		0D8527B02942798E00D97847 /* TriangleAreaTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D8527B12942798E00D97847 /* TriangleAreaTests.swift */,
+			);
+			path = TriangleAreaTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -87,6 +117,24 @@
 			productReference = 0D852794294244F100D97847 /* TriangleArea.app */;
 			productType = "com.apple.product-type.application";
 		};
+		0D8527AE2942798E00D97847 /* TriangleAreaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D8527B52942798E00D97847 /* Build configuration list for PBXNativeTarget "TriangleAreaTests" */;
+			buildPhases = (
+				0D8527AB2942798E00D97847 /* Sources */,
+				0D8527AC2942798E00D97847 /* Frameworks */,
+				0D8527AD2942798E00D97847 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D8527B42942798E00D97847 /* PBXTargetDependency */,
+			);
+			name = TriangleAreaTests;
+			productName = TriangleAreaTests;
+			productReference = 0D8527AF2942798E00D97847 /* TriangleAreaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -99,6 +147,10 @@
 				TargetAttributes = {
 					0D852793294244F100D97847 = {
 						CreatedOnToolsVersion = 13.4.1;
+					};
+					0D8527AE2942798E00D97847 = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = 0D852793294244F100D97847;
 					};
 				};
 			};
@@ -116,6 +168,7 @@
 			projectRoot = "";
 			targets = (
 				0D852793294244F100D97847 /* TriangleArea */,
+				0D8527AE2942798E00D97847 /* TriangleAreaTests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +181,13 @@
 				0D8527A4294244F600D97847 /* LaunchScreen.storyboard in Resources */,
 				0D8527A1294244F600D97847 /* Assets.xcassets in Resources */,
 				0D85279F294244F100D97847 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D8527AD2942798E00D97847 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,7 +204,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0D8527AB2942798E00D97847 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D8527B22942798E00D97847 /* TriangleAreaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D8527B42942798E00D97847 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D852793294244F100D97847 /* TriangleArea */;
+			targetProxy = 0D8527B32942798E00D97847 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		0D85279D294244F100D97847 /* Main.storyboard */ = {
@@ -338,6 +414,42 @@
 			};
 			name = Release;
 		};
+		0D8527B62942798E00D97847 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T768T2ZQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yusufaw.TriangleAreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriangleArea.app/TriangleArea";
+			};
+			name = Debug;
+		};
+		0D8527B72942798E00D97847 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2T768T2ZQJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.yusufaw.TriangleAreaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TriangleArea.app/TriangleArea";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -355,6 +467,15 @@
 			buildConfigurations = (
 				0D8527A9294244F600D97847 /* Debug */,
 				0D8527AA294244F600D97847 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D8527B52942798E00D97847 /* Build configuration list for PBXNativeTarget "TriangleAreaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D8527B62942798E00D97847 /* Debug */,
+				0D8527B72942798E00D97847 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
